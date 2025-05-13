@@ -41,7 +41,7 @@ footer{
   width: 100%;
   bottom: 0;
   left: 0;
-  height: 10%; /* Defina uma altura para o rodapé */
+  height: 12%; /* Defina uma altura para o rodapé */
   gap:20px;
 }
 
