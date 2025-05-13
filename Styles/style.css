@@ -1,0 +1,351 @@
+body{
+    color: #2e2c28;  /*Cor de todas as fontes do body */
+    font-family: "poppinsregular";
+    /* padding:10px; */
+    /* max-width:1500px; */
+    /* height:190vh; */
+    background: linear-gradient(to bottom right , #332d1f 2% , #ffca38 25% ,#fdb64c 40%,#0a0a00 80% );
+    background-size: 200%, 100%; 
+    animation: MovesGradient 7s infinite alternate; /* Nome da animação alterado */
+
+}
+
+@keyframes MovesGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 80%; } 
+}
+
+/* Structure Setting / Configuração de Estrutura*/
+header{
+
+  position:fixed;
+  top: 0;
+  left:0;
+  justify-content: left;
+  width: 100%;
+  background-color: #000000; /* Cor de fundo opcional */
+  z-index:10;
+}
+
+main{
+margin-top: 60px;
+
+}
+
+footer{
+  display: flex;
+  text-align: center;
+  background: black;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 10%; /* Defina uma altura para o rodapé */
+  gap:20px;
+}
+
+
+nav{
+
+margin-top: 10px;
+
+}
+
+
+ul{
+display:flex;
+list-style-type: none;
+gap: 5%;
+margin:0;     /*Necessário incluir margin 0 , para os atalhos do cabeçalho no menu funcionarem.*/
+align-items: left;
+
+}
+
+
+li{
+  text-decoration: none;
+  list-style-type: none;
+
+  }
+
+
+button{
+ background-color: #282924; /* Cor de fundo verde */
+  color: rgb(255, 217, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container{
+  flex-direction: inline-block;
+
+}
+
+
+.foto-topico{
+  margin-right:auto;
+  width: 20px;
+
+
+}
+
+.principal{
+  flex-direction: row;
+  display: FLEX;
+  gap: 5px;
+}
+
+/* main{
+
+    } */
+
+.Imagens-login{
+  display: flex;
+  align-items: center;
+    margin:auto;
+  justify-content: center;
+}
+
+/* Section = apresentado */
+.PRINCIPAL{
+    display:flex;
+    flex-direction:row;
+    align-items: left; 
+    justify-content: space-between; /* Espaçar o texto e a foto */
+    margin-top: 100px;
+    
+    }
+
+
+
+/* .projeto1{}
+.projeto2{}
+.projeto3{} */
+
+
+/* Text Settings / Configuração de texto */
+
+h1{
+    font-size:50px;
+    line-height:52px;
+    font-family:'poppinsmedium';
+    margin-left:15px;
+
+/*Position/ Posição*/
+    text-align:left;
+
+      /*Cores do H1*/
+    color: transparent;
+    background: linear-gradient(to right , #22211e 0%, #000000 50% );
+    background-size: 200% 100%;
+
+    /* Apagar do fundo tudo que não estiver imediatamente atrás de texto: */
+    /* background-clip: text; */
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    -webkit-text-fill-color: transparent; 
+}
+
+
+h2{
+    font-weight: 600;
+    max-width: 200px;
+    color:#030708;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+#contatos{
+    color: #d6b10b;
+    display: flex;
+    font-size:25px;
+    bottom: auto;
+    max-width: 40PX;
+    text-align: center;
+    margin: auto;
+}
+
+
+#nome-h2{
+    font-size: 25px;
+    font-weight: 600;
+    color:#f8c20f;
+    text-align: right;
+    margin-left: 900px;
+
+
+
+
+}
+
+
+
+
+h3{
+    font-size: 35px;
+    font-family:'poppins';
+    text-align:left;
+    position: relative;
+    display: flex;
+    max-width: 800px;
+    margin-left: 100px;
+    
+
+
+
+  }
+
+h4{
+  display:flex;
+  font-size: 35px;
+  text-align: left;
+  margin: auto;
+  margin-left: 100px;
+}
+
+
+p{
+    font-size:20px;
+    line-height: 40px;
+    max-width:95%;
+    MARGIN-TOP: 10PX;
+    margin-bottom: 20PX;
+    margin-left:15px;
+    color:#000000;
+}
+
+
+span{
+color:rgb(0, 0, 0);
+font-weight: 900;
+color: transparent;
+background: linear-gradient(to right , #22211e 0%, #553300 50% );
+background-size: 200% 100%;
+
+/* Apagar do fundo tudo que não estiver imediatamente atrás de texto: */
+background-clip: text;
+-webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+/* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+-webkit-text-fill-color: transparent; 
+}
+
+
+
+a{
+    color: #ffc400;
+    font-weight:600;
+    text-decoration: none;
+    font-size: 25px;
+    
+    
+}
+
+a:hover{
+    color: rgb(31, 30, 30);
+    transition:0.2s all;
+}
+
+
+.formada{
+display: flex;
+}
+
+
+
+
+ol{
+  display: flex;
+  margin:auto;
+  gap: 40px;
+  text-align: center;
+}
+
+/*Images Settings / Configurações de imagem*/
+#perfil-foto{
+  /* display:inline-block; */
+  width: 500px;  /* Tamanho do objeto*/
+  height: 450px; /* Largura  do objeto. OBS:deve ser Largura = Altura = circulo */
+  border-radius: 50%;
+  margin-left: 400px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+
+}
+
+
+#foto-topicos{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+#topico-foto-formada{
+  margin-top: 100px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 50%;
+  
+
+}
+
+#foto-proj-login-1{
+display: flex;
+align-items: center;
+margin:auto;
+}
+
+#whatsapp-logo{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 750px;
+  width:40px; /* Ajuste para o tamanho desejado da foto */
+  height: 40px; /* Deve ser igual à largura para ser um círculo */
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: red solid 1px; */
+}
+
+#gmail-logo{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40px; /* Ajuste para o tamanho desejado da foto */
+  height: 40px; /* Deve ser igual à largura para ser um círculo */
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: red solid 1px; */
+}
+
+
+#linkedin-logo{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40px; /* Ajuste para o tamanho desejado da foto */
+  height: 40px; /* Deve ser igual à largura para ser um círculo */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#github-logo{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right:  auto;
+  width: 40px; /* Ajuste para o tamanho desejado da foto */
+  height: 40px; /* Deve ser igual à largura para ser um círculo */
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+
+
+
