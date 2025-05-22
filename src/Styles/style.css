@@ -258,9 +258,6 @@ a:hover{
 display: flex;
 }
 
-
-
-
 ol{
   display: flex;
   margin:auto;
@@ -274,9 +271,11 @@ ol{
   width: 500px;  /* Tamanho do objeto*/
   height: 450px; /* Largura  do objeto. OBS:deve ser Largura = Altura = circulo */
   border-radius: 50%;
-  margin-left: 400px;
-  margin-top: 120px;
-  margin-bottom: 20px;
+  justify-content: right;
+  display: flex;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 
 }
 
