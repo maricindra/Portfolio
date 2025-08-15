@@ -1,42 +1,202 @@
-@media screen and (max-width:760px){
-/*quando o site chegar na largura de 760px ele vai aplica essa estilização: */
-   body{
-
-    header {
-        flex-direction: column;
-
-      }
-
-      h1{
-          font-size:25px;
-          font-weight: 300;
-          margin-left: 0px;
-      }
-
-      main {
-        flex-direction: column;
-      }
-
-      img{
-          display: block;
-          margin-left: 0px;
-          width: 260px; /* Ajuste para o tamanho desejado da foto */
-          height: 260px; /* Deve ser igual à largura para ser um círculo */
-          border-radius: 50%;
-          object-fit: cover;
-          position: relative;
-      }
-
-
-
-      }
-
-
-
-      h2 {
-        font-size: 50px;
-      }
-
-
-
-    }
+@media (max-width: 1200px) {
+/* Adjustments for larger tablets and smaller desktops */
+.principal {
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+#perfil-foto {
+width: 40%;
+height: auto;
+margin: 0 auto;
+}
+h1 {
+font-size: 40px;
+line-height: 42px;
+text-align: center;
+margin-left: 0;
+}
+h3 {
+font-size: 28px;
+max-width: 90%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+#nome-h2 {
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+font-size: 22px;
+}
+.Formada {
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+h4 {
+font-size: 28px;
+margin-left: 0;
+text-align: center;
+}
+.projetos {
+align-items: center;
+}
+h2 {
+max-width: 100%;
+text-align: center;
+margin: 0 auto;
+}
+p {
+max-width: 100%;
+margin-left: 0;
+text-align: center;
+}
+#whatsapp-logo {
+margin-left: auto;
+}
+footer {
+height: auto;
+padding: 10px 0;
+gap: 10px;
+}
+ol {
+gap: 20px;
+}
+}
+@media (max-width: 768px) {
+/* Adjustments for tablets and larger mobiles */
+body {
+padding: 5px;
+}
+header {
+position: static; /* Remove fixed to prevent overlap on small screens */
+}
+main {
+margin-top: 0;
+}
+ul {
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+.container {
+text-align: center;
+}
+#perfil-foto {
+width: 60%;
+height: auto;
+}
+h1 {
+font-size: 32px;
+line-height: 34px;
+}
+h3 {
+font-size: 24px;
+}
+h4 {
+font-size: 24px;
+}
+p {
+font-size: 18px;
+line-height: 30px;
+}
+a {
+font-size: 20px;
+}
+button {
+font-size: 14px;
+padding: 8px 16px;
+}
+#foto-topicos {
+width: 25px;
+height: 25px;
+}
+.Projeto1, .Projeto2, .Projeto3 {
+text-align: center;
+}
+#foto-proj-login-1 {
+max-width: 100%;
+height: auto;
+}
+footer {
+position: static; /* Remove fixed for better flow on mobile */
+height: auto;
+flex-direction: column;
+align-items: center;
+padding: 15px 0;
+}
+#contatos {
+font-size: 20px;
+max-width: 100%;
+}
+ol {
+flex-direction: row;
+justify-content: center;
+gap: 15px;
+}
+#whatsapp-logo, #gmail-logo, #linkedin-logo, #github-logo {
+width: 35px;
+height: 35px;
+}
+}
+@media (max-width: 480px) {
+/* Adjustments for small mobiles */
+h1 {
+font-size: 28px;
+line-height: 30px;
+}
+h2 {
+font-size: 20px;
+}
+h3 {
+font-size: 20px;
+}
+h4 {
+font-size: 20px;
+}
+p {
+font-size: 16px;
+line-height: 28px;
+}
+a {
+font-size: 18px;
+}
+button {
+font-size: 12px;
+padding: 6px 12px;
+}
+#perfil-foto {
+width: 80%;
+height: auto;
+}
+#foto-topicos {
+width: 20px;
+height: 20px;
+}
+ol {
+gap: 10px;
+}
+#whatsapp-logo, #gmail-logo, #linkedin-logo, #github-logo {
+width: 30px;
+height: 30px;
+}
+.principal, .Formada, .projetos {
+gap: 10px;
+}
+}
+/* General responsive enhancements applied globally */
+img {
+max-width: 100%;
+height: auto;
+}
+.container, .principal, .Formada, .projetos {
+width: 100%;
+max-width: 100%;
+box-sizing: border-box;
+}
+p {
+margin-left: 0;
+margin-right: 0;
+padding: 0 10px;
+}
